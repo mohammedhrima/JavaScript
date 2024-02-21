@@ -1,0 +1,91 @@
+.login_container {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 10%;
+}
+
+.login_image {
+  margin-top: 160px;
+  width: 40vw;
+  margin-left: -5%;
+}
+
+.log_to_account h3 {
+  color: var(--Black);
+  margin-top: 48px;
+  margin-left: 5vw;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.log_to_account h2 {
+  color: var(--Black);
+
+  margin-top: 16px;
+  margin-left: 6vw;
+  margin-bottom: 8px;
+}
+.log_to_account input {
+  max-height: 80px;
+  margin-left: 5vw;
+  width: 40vw;
+  height: 40px;
+  border-radius: 1.2vw;
+  padding-left: 16px;
+  color: var(--White);
+}
+
+.log_to_account {
+  margin-top: 120px;
+}
+
+.login_container button {
+  margin-left: 10vw;
+  margin-top: 40px;
+  width: 30vw;
+  padding: 8px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+
+.login_container button h2 {
+  margin-top: 8px;
+  font-size: 32px;
+  color: var(--White);
+  margin-left: 0vw;
+}
+
+.login_container button:hover h2 {
+  color: var(--Green);
+}
+
+.login_container p {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+  .login_image {
+    display: none;
+  }
+  .login_container {
+    width: 100vw;
+    display: block;
+  }
+  .login_container button {
+    display: block;
+    width: 60vw;
+    margin-left: 20vw;
+  }
+  .login_container h2 {
+    text-align: center;
+  }
+  .login_container input {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+}

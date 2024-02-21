@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --color1: #2a3a73;
+  --color2: #34488d;
+  --color3: #394d99;
+  --color4: #506ed9;
+  --color5: #3a34a3;
+  --color6: #0f2c8a;
+  --color7: #1f31d8;
+  --color8: #1665f0;
+  --color9: #f01616;
+  --color10: #06dca9;
+  --black: #1c274d;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 13px;
+}
+
+a {
+  cursor: pointer;
+}
+i {
+  cursor: pointer;
+}
+button {
+  cursor: pointer !important;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+  border: none;
+}
+button:hover {
+  filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.25));
+}
+
+.bg {
+  width: 100%;
+  height: auto;
+}
+
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none !important;
+}
+
+.save {
+  background-color: var(--color10);
+  color: white;
+}
+.delete {
+  background-color: var(--color9);
+  color: white;
+}
+
+.save:hover {
+  background-color: white;
+  color: var(--color10);
+}
+.delete:hover {
+  background-color: white;
+  color: var(--color9);
+}
+.error {
+  margin-top: 60px !important;
+  color: white !important;
+  text-align: center !important;
+  background-color: var(--color9);
+  width: 70%;
+  margin-left: 15%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.success {
+  margin-top: 60px !important;
+  color: white !important;
+  text-align: center !important;
+  background-color: var(--color10);
+  width: 70%;
+  margin-left: 15%;
+  padding: 10px;
+  border-radius: 15px;
+}

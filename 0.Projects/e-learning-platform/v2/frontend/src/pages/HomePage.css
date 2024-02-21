@@ -1,0 +1,70 @@
+.startBtn {
+  margin-top: 40px;
+  margin-left: calc(50vw - 140px);
+  width: 280px;
+  padding: 16px 16px;
+  border-radius: 24px;
+}
+
+.idiom {
+  margin: 40px 24px;
+  padding: 32px 48px;
+  background: linear-gradient(
+    90deg,
+    rgba(103, 190, 244, 0.7315) 0%,
+    rgba(29, 161, 242, 0.95) 100%
+  );
+  border-radius: 36px;
+}
+
+.about {
+  text-align: center;
+  padding: 32px 48px;
+  background: linear-gradient(
+    90deg,
+    rgba(29, 161, 242, 0.95) 0%,
+    rgba(103, 190, 244, 0.7315) 100%
+  );
+  border-radius: 36px;
+  width: 60vw;
+  margin-left: calc(20vw - 48px);
+  margin-bottom: 24px;
+}
+
+.idiom .see_more_idiom {
+  position: absolute;
+  right: 24px;
+  width: 168px;
+  height: 48px;
+  border-radius: 36px 0px 36px 0px;
+  margin-top: -16px;
+}
+
+.idiom p {
+  margin-bottom: 16px;
+}
+
+.teachers {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 5%;
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+.h3 {
+  text-align: center;
+  color: #202325;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+  .teachers {
+    display: block;
+  }
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

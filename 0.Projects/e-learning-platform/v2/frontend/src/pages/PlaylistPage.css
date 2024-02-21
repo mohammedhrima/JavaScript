@@ -1,0 +1,84 @@
+.details {
+  background-color: var(--Primary);
+  margin: 4vw 8vw 0vw 8vw;
+  padding: 32px 32px;
+  border-radius: 32px;
+  color: var(--Black);
+}
+.details h2 {
+  margin-bottom: 8px;
+}
+
+.course_container {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  /* display: inline-flex;*/
+  margin-left: 5%;
+  width: 86%;
+  display: grid;
+  grid-template-columns: 70% 29%;
+}
+
+.btns button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  min-width: 200px;
+}
+
+.btns button > h1 {
+  color: var(--White);
+}
+
+.btns button:hover h1 {
+  color: var(--Green);
+}
+
+.course_container .btns {
+  height: 560px;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: var(--Footer);
+  max-height: 505px;
+}
+
+.Playlist_container {
+  margin-bottom: 40px;
+}
+.Playlist_container .Certif {
+  margin-left: 10%;
+  padding: 16px 16px;
+  border-radius: 16px;
+  width: 70vw;
+  margin-left: 15vw;
+}
+
+.Playlist_container p:nth-child(4) {
+  color: #c4d2db;
+  margin-top: 12px;
+  margin-left: 10%;
+}
+.Playlist_container .cover {
+  height: 44vw;
+  width: 60vw;
+  background-color: #7c868c;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+  .course_container {
+    grid-template-columns: 100%;
+    margin-left: 7.5vw;
+  }
+  .Playlist_container .cover {
+    width: 100%;
+  }
+  .player {
+    margin-bottom: 10px;
+  }
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

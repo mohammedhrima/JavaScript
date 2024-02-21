@@ -1,0 +1,33 @@
+.courses_container {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 10%;
+  margin-right: 13%;
+  margin-bottom: 200px;
+}
+
+.addnewcourse {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 30vw;
+  width: 40vw;
+  height: 90px;
+  border-radius: 32px;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 700px) {
+  .courses_container {
+    display: block;
+    margin-bottom: 200px;
+  }
+
+  .addnewcourse {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+}

@@ -1,0 +1,32 @@
+.I-P {
+  min-height: calc(100vh - 150px);
+}
+
+.I-P .weare-header {
+  display: none !important;
+}
+
+.programs {
+  margin-left: 4vw;
+  display: grid;
+  grid-template-columns: 44vw 44vw;
+  gap: 4vw;
+  margin-top: 50px;
+}
+
+.addprogrambtn {
+  margin-top: 60px;
+  width: 40%;
+  margin-left: 30%;
+  height: 100px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: var(--color8);
+  color: white;
+}
+
+.addprogrambtn:hover {
+  color: var(--color8);
+  background-color: white;
+}

@@ -1,0 +1,31 @@
+.footer_logo img{
+    position: relative;
+    height: 30px;width: 30px;
+    left: calc(50% - 15px);
+    margin-bottom: 1rem;
+}
+
+footer{
+    background: var(--color-primary);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+}
+
+footer a{
+    color: var(--color-bg);
+}
+
+.permalinks{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+.footer_copyright{
+    margin-bottom: 4rem;
+    color: var(--color-bg);
+}

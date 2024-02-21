@@ -1,0 +1,82 @@
+.IT_container {
+  margin-top: 48px;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.IT_container h3 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.IT_container textarea {
+  margin-top: 24px;
+  height: 30vh;
+  width: 65vw;
+  border-radius: 48px;
+  border: 4px solid var(--Black);
+  padding: 36px 36px 36px 36px;
+  font-size: 16px;
+  color: var(--Black);
+}
+
+.IT_container .upload {
+  background-color: var(--Secondary);
+  margin-top: 40px;
+  width: 30vw;
+  padding: 2vw 2vw;
+  border-radius: 24px;
+}
+.IT_container .upload:hover {
+  background-color: var(--White);
+}
+.IT_container .upload:hover h2 {
+  color: var(--Secondary);
+}
+
+.IT_container .send {
+  width: 20vw;
+  height: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 30vw;
+  padding: 2vw 2vw;
+  border-radius: 24px;
+}
+.IT_container input {
+  margin-top: 4px;
+  width: 16vw;
+  height: 40px;
+  min-width: 200px;
+  border-radius: 16px;
+  padding-left: 1vw;
+  margin-bottom: 16px;
+  font-size: 18px;
+  background-color: var(--White);
+}
+
+.IT_container h2 {
+  color: var(--White);
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+  .IT_container .send {
+    width: 50vw !important;
+    height: 80px;
+    margin-left: 15vw;
+    padding: 2vw 2vw;
+    border-radius: 24px;
+    width: auto;
+  }
+  .IT_container h2 {
+    text-align: center;
+  }
+  .IT_container input {
+    width: 100%;
+  }
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

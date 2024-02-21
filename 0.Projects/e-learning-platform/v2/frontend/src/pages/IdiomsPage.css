@@ -1,0 +1,60 @@
+.idioms_container {
+  margin-top: 24px;
+  width: 96vw;
+  margin-left: 2vw;
+}
+
+.idioms_container p {
+  background-color: var(--Secondary);
+  padding: 16px 16px;
+  border-radius: 16px;
+  color: var(--White);
+  margin-top: 8px;
+}
+
+.idioms_container textarea {
+  background-color: var(--White);
+  padding: 16px 16px;
+  border-radius: 16px;
+  width: 80vw;
+  height: 10vw;
+}
+
+.idioms_container button {
+  margin-top: 16px;
+  display: block;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.idioms_container h2 {
+  padding: 8px 16px;
+}
+
+.idiom_ {
+  display: block;
+  position: relative;
+}
+.idiom_ p {
+  display: inline-block;
+}
+
+.idiom_ span {
+  position: fixed;
+  margin-top: 1px;
+  margin-left: -10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--Red);
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

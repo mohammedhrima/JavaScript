@@ -1,0 +1,54 @@
+.course {
+  margin-top: 32px;
+  background-color: var(--Primary);
+  width: 25vw;
+  border-radius: 36px;
+  padding: 32px 5vw;
+  margin-left: 10vw;
+  cursor: pointer;
+  text-align: center;
+}
+
+.course img {
+  width: 25vw;
+}
+
+.course h3 {
+  margin-bottom: 16px;
+}
+
+.course h2 {
+}
+
+.course h1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.course button {
+  margin-top: 24px;
+  height: 80px;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.start_course {
+  background-color: var(--Primary);
+}
+.start_course:hover {
+  background-color: var(--White);
+}
+.start_course:hover h2 {
+  color: var(--Primary);
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 700px) {
+  .course {
+    width: 80vw;
+    margin-left: 5vw;
+  }
+}

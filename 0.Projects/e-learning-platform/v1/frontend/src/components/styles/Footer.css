@@ -1,0 +1,26 @@
+.Footer {
+  height: 150px;
+  margin-top: 60px;
+  background-color: #23336e;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+}
+
+.Footer h3 {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Footer h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Footer {
+    display: block;
+  }
+}

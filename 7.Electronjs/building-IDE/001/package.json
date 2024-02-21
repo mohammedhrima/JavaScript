@@ -1,0 +1,16 @@
+{
+  "name": "ide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development electron .",
+    "build": "electron-builder"
+  },
+  "author": "Hrima Mohammed",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^23.0.3",
+    "electron-reloader": "^1.2.3"
+  }
+}

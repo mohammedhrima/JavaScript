@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+}
+
+.contact-card img {
+  width: 60%;
+  margin: 5% 0px 0px 25%;
+  border-radius: 20px;
+}
+
+span {
+  width: 450px;
+  height: 170px;
+  display: block;
+}
+
+.contact-card {
+  margin: 20px;
+  width: 450px;
+  border: 0.1px solid gray;
+  box-shadow: 7px 7px gray;
+  border-radius: 20px;
+}
+
+h3 {
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+h1 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+i {
+  margin-right: 10px;
+}

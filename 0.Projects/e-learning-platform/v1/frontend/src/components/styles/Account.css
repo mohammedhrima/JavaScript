@@ -1,0 +1,81 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.popup-inner {
+  position: relative;
+  background-color: var(--color3);
+  border-radius: 20px;
+  padding: 0px 0px 20px 0px;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+}
+
+.close-btn i {
+  font-size: 30px;
+}
+
+.popup-inner .close-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+.none {
+  display: none;
+}
+
+.popup-inner nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.popup-inner h2,
+.popup-inner span {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.popup-inner span {
+  padding: 20px 0px 0px 0px;
+}
+
+.popup-inner .visited {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+
+.log {
+  border-radius: 20px 0 0 0;
+}
+
+.sign {
+  border-radius: 0 20px 0 0;
+}
+
+@media (max-width: 420px) {
+  .popup-inner .close-btn {
+    right: -5px;
+    top: -45px;
+  }
+}

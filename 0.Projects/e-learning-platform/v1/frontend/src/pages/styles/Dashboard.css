@@ -1,0 +1,41 @@
+.dashboard {
+  margin-top: 80px;
+  min-height: calc(100vh - 290px);
+}
+
+.dashboard .weare-header {
+  display: none !important;
+}
+
+.dashboard table {
+  margin-top: 20px;
+  width: 70vw;
+  margin-left: 10px;
+}
+
+.dashboard table {
+  border: 2px solid;
+  background-color: var(--color1);
+}
+
+.dashboard thead {
+}
+
+table td,
+table tr,
+table th {
+  border: 2px solid white;
+}
+
+table td {
+  padding: 10px;
+}
+
+table h4 {
+  margin-bottom: 10px !important;
+  color: white;
+  display: contents;
+}
+table {
+  color: white;
+}

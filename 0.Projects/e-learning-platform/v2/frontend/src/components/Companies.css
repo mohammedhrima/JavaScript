@@ -1,0 +1,23 @@
+.company_logo {
+  margin-left: 7.5vw;
+  width: 20vw;
+  max-width: 100px;
+  height: auto;
+}
+
+.companies_log_container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  gap: 10%;
+  margin-left: 10%;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

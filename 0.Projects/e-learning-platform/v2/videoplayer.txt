@@ -1,0 +1,170 @@
+import React from "react";
+import "./VideoPlayer.css";
+import { useRef, useState } from "react";
+
+function VideoPlayer({ video_src }) {
+  const videoRef = useRef(null);
+  const [playing, setPlaying] = useState(false);
+  const [isHover, setIsHover] = useState(false);
+  const [videoTime, setVideoTime] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [progress, setProgress] = useState(0);
+
+  const videoHandler = () => {
+    if (currentTime === videoTime) {
+      setPlaying(true);
+      videoRef.current.play();
+    } else if (playing) {
+      videoRef.current.pause();
+      setPlaying(false);
+    } else {
+      setPlaying(true);
+      videoRef.current.play();
+      setPlaying(true);
+      var vid = document.getElementById("video1");
+      setVideoTime(vid.duration);
+    }
+  };
+
+  const move = (time) => {
+    videoRef.current.currentTime += time;
+  };
+  window.setInterval(function () {
+    setCurrentTime(videoRef.current?.currentTime);
+    setProgress((videoRef.current?.currentTime / videoTime) * 100);
+  }, 1000);
+
+  let the_color = {
+    color: isHover ? "#1df2d8" : "red",
+  };
+  return (
+    <div
+      className="playlist"
+      onMouseEnter={() => {
+        setIsHover(true);
+      }}
+      onMouseLeave={() => {
+        setIsHover(false);
+      }}
+    >
+      {/*set video link */}
+
+      <video
+        ref={videoRef}
+        id="video1"
+        className="video"
+        src={video_src}
+      ></video>
+
+      <div className="controllers">
+        <button
+          className="fa-solid fa-angle-left"
+          style={the_color}
+          onClick={() => move(-5)}
+        ></button>
+        <button
+          className={
+            playing && currentTime != videoTime && currentTime != 0
+              ? "fa-solid fa-pause"
+              : currentTime === videoTime && currentTime != 0
+              ? "fa-solid fa-arrow-rotate-right"
+              : "fa-solid fa-play"
+          }
+          style={the_color}
+          onClick={() => videoHandler()}
+        ></button>
+        <button
+          className="fa-solid fa-angle-right"
+          style={the_color}
+          onClick={() => move(5)}
+        ></button>
+        {/*timing*/}
+        <div className="timecontrols">
+          <p className="controlsTime">
+            {(parseInt(currentTime / 60) < 10 ? "0" : "") +
+              parseInt(currentTime / 60) +
+              ":" +
+              (parseInt(currentTime % 60) < 10 ? "0" : "") +
+              parseInt(currentTime % 60)}
+          </p>
+          <div className="time_progress">
+            <div style={{ width: `${progress}%` }} className="timebar"></div>
+          </div>
+          <p className="controlsTime">
+            {(parseInt(videoTime / 60) < 10 ? "0" : "") +
+              parseInt(videoTime / 60) +
+              ":" +
+              (parseInt(videoTime % 60) < 10 ? "0" : "") +
+              parseInt(videoTime % 60)}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default VideoPlayer;
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+.playlist > .video {
+  width: 70vw;
+  right: 0;
+}
+
+.playlist {
+  position: relative;
+  width: 70vw;
+}
+
+.controllers {
+  width: 70vw;
+  display: flex;
+}
+
+.controllers button {
+  color: transparent;
+  background-color: transparent;
+  font-size: 32px;
+  height: 80px;
+  width: 23.33vw;
+}
+
+.controllers:hover > button {
+  color: var(--Green);
+}
+.timecontrols {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70vw;
+}
+.time_progress {
+  background-color: gray;
+  border-radius: 15px;
+  height: 5px;
+  z-index: 30;
+  position: relative;
+  margin: 0 20px;
+}
+.timebar {
+  border-radius: 15px;
+  background-color: #e6f5fe;
+  height: 100%;
+}
+.controlsTime {
+  color: white;
+}
+
+.handler {
+  position: relative;
+}
+
+#video1 {
+}
+
+.timecontrols .time_progress {
+  width: 100%;
+}

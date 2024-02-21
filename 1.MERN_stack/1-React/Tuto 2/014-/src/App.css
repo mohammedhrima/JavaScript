@@ -1,0 +1,21 @@
+body {
+  background-color: #23252C;
+  color: aliceblue;
+}
+
+.App h1 {
+  margin-left: 40vw;
+  width: 20vw;
+  text-align: center;
+}
+
+
+
+.res h1 {
+  background: rgb(33, 2, 113);
+  margin-left: 40vw;
+  width: 20vw;
+  height: 13vw;
+  padding-top: 7vw;
+  border-radius: 10vw;
+}

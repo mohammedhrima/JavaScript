@@ -1,0 +1,100 @@
+:root {
+  --prim1: #005ea7;
+  --prim2: #d9dfe3;
+  --sec1: #0089f2;
+  --sec2: #d8f0ec;
+  --thir1: #49a9f2;
+  --thir2: #99c8e8;
+  --dang: #f24949;
+}
+
+body{
+	background-color: var(--prim1);
+}
+
+#counter {
+	width: 90vw !important;
+	padding: 10px 0 10px 0px;
+	border-radius: 16px;
+	background-color: var(--sec2);
+	color: var(--prim1);
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 3vw;
+	margin-bottom: 20px;
+}
+
+.btns{
+	display: inline-flex;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	/*width: 90%;*/
+	margin-left: 3%;
+	display: grid;
+	grid-template-columns: 22% 22% 22% 22%;
+	gap: 2.8%;
+}
+
+.btns button{
+	font-size: 24px;
+	font-weight: bold;
+	background-color: var(--thir1);
+	color: white;
+	border-radius: 200px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	height: 20vw;
+}
+
+button:hover{
+	color: var(--thir1);
+	background-color: white;
+}
+
+#existed{
+	background-color:var(--prim2);
+	border-radius: 16px;
+}
+
+#retour{
+	height: 60px;
+	width: 120px;
+	margin-top: 10px;
+	background-color: var(--thir1);
+	border: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius:  20px 0px 0px 20px;
+	cursor: pointer;
+}
+#retour:hover{
+	background-color: white;
+	color: var(--thir1);
+}
+
+#exist{
+	border-radius: 16px;
+	background-color: var(--prim2);	
+	height: 300px;
+	overflow-y: auto;
+}
+#exist button{
+	padding: 20px 0;
+	display: grid;
+	width: 100%;
+	border-radius: 16px;
+	border: none;
+	background-color: var(--thir2);
+	color: white;
+	font-size: 20px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+#exist button:hover{
+	color: var(--thir2);
+	background-color: white;
+}

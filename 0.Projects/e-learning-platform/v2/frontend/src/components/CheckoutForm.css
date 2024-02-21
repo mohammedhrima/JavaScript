@@ -1,0 +1,71 @@
+.checkout_container {
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 60% 30%;
+}
+
+.checkout_image {
+  margin-top: 20px;
+  width: 35vw;
+}
+
+.checkout_container div:first-child {
+  margin-top: 40px;
+}
+.checkout_container input {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 60%;
+  padding: 12px 12px;
+  border-radius: 16px;
+  background-color: var(--White);
+}
+.checkout_container h1 {
+  margin-left: 8px;
+}
+
+.checkout_container button {
+  width: 20vw;
+  margin-left: 5vw;
+  margin-top: 16px;
+  height: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 16px;
+}
+
+.checkout_container .payment_card {
+  margin-left: 8px;
+  width: 64%;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+  .checkout_container {
+    grid-template-columns: 90%;
+  }
+
+  .checkout_container button {
+    width: 60vw;
+    margin-left: 15vw;
+  }
+
+  .checkout_container input {
+    margin-left: 20%;
+  }
+
+  .checkout_container h1 {
+    text-align: center;
+  }
+  .checkout_container .payment_card {
+    margin-left: 20vw;
+  }
+
+  .checkout_image {
+    display: none;
+  }
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

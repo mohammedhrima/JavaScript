@@ -1,0 +1,3 @@
+npm install electron-builder -D
+
+Add "NODE_ENV=development electron ." in scripts:{"start":"NODE_ENV=development electron .","build":"electron-builder"}

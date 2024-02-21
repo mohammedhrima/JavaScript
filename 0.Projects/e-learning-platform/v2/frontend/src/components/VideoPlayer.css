@@ -1,0 +1,32 @@
+.player > video {
+  width: 100%;
+}
+
+.player button {
+  width: 10%;
+  height: 44px;
+  font-size: 15px;
+}
+.timecontroller {
+  display: inline-block;
+  width: 70%;
+  height: 44px;
+  background-color: var(--White);
+}
+
+.timebar {
+  background-color: var(--Secondary);
+  height: 44px;
+}
+
+.controllers {
+  display: flex;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

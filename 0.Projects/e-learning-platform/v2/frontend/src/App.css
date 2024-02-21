@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* box-sizing: border-box;*/
+}
+
+body {
+  background: linear-gradient(90deg, #1da1f2, #0cccf2, #67bef4, #177fbf);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+  --Gradian: linear-gradient(
+    90deg,
+    rgba(29, 161, 242, 0.95) 0%,
+    rgba(103, 190, 244, 0.7315) 100%
+  );
+  --Primary: #1da1f2;
+  --Secondary: #1da1f2;
+  --Background: #e6f5fe;
+  --Black: #202325;
+  --Green: #1df2d8;
+  --White: #ffffff;
+  --Footer: #1780c2;
+  --Red: #f21d1d;
+}
+
+p {
+  color: var(--Black);
+}
+h1 {
+  font-size: 16px;
+  color: var(--Black);
+}
+h2 {
+  font-size: 20px;
+  color: var(--Black);
+}
+h3 {
+  font-size: 32px;
+  color: var(--Black);
+}
+h4 {
+  font-size: 40px;
+  color: var(--Black);
+}
+h5 {
+  font-size: 48px;
+  color: var(--Black);
+}
+
+button {
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  color: var(--White);
+  background: var(--Green);
+  cursor: pointer;
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+}
+button h3 {
+  color: var(--White);
+}
+button:hover h3 {
+  color: var(--Green);
+}
+
+button h2 {
+  color: var(--White);
+}
+
+button:hover h2 {
+  color: var(--Green);
+}
+
+button:hover {
+  background: var(--White);
+  color: var(--Green);
+}
+
+button:hover {
+  background: var(--White);
+  color: var(--Green);
+}
+button:disabled {
+  background-color: #befbf3;
+}
+
+input {
+  background-color: rgba(103, 190, 244);
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+.App {
+  min-height: calc(100vh - 280px);
+}
+
+.IT {
+  position: absolute;
+  right: 30px;
+  background-color: var(--Red);
+  width: 280px;
+  padding: 16px 16px;
+  border-radius: 16px;
+}
+
+.IT h3 {
+  color: var(--White);
+}
+
+.IT:hover {
+  background-color: var(--White);
+}
+.IT:hover h3 {
+  color: var(--Red);
+}
+
+.alert {
+  color: var(--White) !important;
+  width: 38vw;
+  background-color: var(--Red);
+  color: var(--White);
+  text-align: center;
+  padding: 2vw;
+  border-radius: 16px;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+  .IT {
+    right: 20vw;
+    width: 60vw;
+    height: 120px;
+  }
+  .App {
+    min-height: calc(100vh - 520px);
+  }
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

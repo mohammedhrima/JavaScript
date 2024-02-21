@@ -1,0 +1,61 @@
+.editprogram {
+  margin-top: 80px;
+  min-height: calc(100vh - 290px);
+}
+
+.editprogram .weare-header {
+  display: none !important;
+}
+
+.editprogram .data {
+  margin-left: 20px;
+  margin-top: 140px;
+}
+
+.data img {
+  height: 150px;
+  width: 300px;
+  background-color: rgb(139, 139, 139);
+  border-radius: 20px;
+}
+
+.data input {
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  background-color: beige;
+  padding: 2px 10px;
+  font-size: 18px;
+}
+.data input[type="number"],
+.data input[type="date"],
+.data input[type="time"] {
+  width: 160px;
+}
+.data textarea {
+  width: 400px;
+  min-height: 100px;
+  background-color: beige;
+  padding: 2px 15px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.editprogram button {
+  width: 20vw;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 40px;
+}
+
+.editprogram .btns {
+  margin-top: 60px;
+  width: 40vw;
+  margin-left: 30vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20%;
+}

@@ -1,0 +1,10 @@
++ to_learn:
+    - tailswind 
+    - typescript
+    - nextjs
+    - prisma
+    - postgressORM
+    - nestjs
+    - django
+    - sass
+    - docker

@@ -1,0 +1,381 @@
+.offer {
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+.offer h1 {
+  margin-top: 2px !important;
+  writing-mode: vertical-lr;
+  color: var(--black);
+  margin: 20px 20px;
+}
+
+.purpose {
+  display: flex;
+  background-color: var(--color1);
+  width: 45%;
+}
+
+.coaching {
+  display: flex;
+  background-color: var(--color1);
+  width: 60%;
+}
+
+.business {
+  display: flex;
+  background-color: var(--color1);
+  width: 75%;
+}
+
+.international {
+  display: flex;
+  background-color: var(--color1);
+  width: 90%;
+}
+
+.offer span {
+  margin-top: 20px;
+  padding: 20px 1vw;
+  border-radius: 0 120px 120px 0;
+}
+
+.offer img {
+  height: 10vw;
+  max-height: 80px;
+  width: auto;
+}
+
+.offer h2 {
+  margin-left: 20px;
+  color: white;
+}
+
+.offer h1 {
+}
+
+.Home {
+  min-height: calc(100vh - 150px);
+  width: 100vw;
+}
+
+/*process*/
+
+.process h1 {
+  text-align: center;
+  color: var(--black);
+}
+
+.process div {
+  display: inline-flex;
+  align-items: end;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.process span {
+  display: grid;
+  width: 12vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.process h2 {
+  color: white;
+  text-align: center;
+}
+
+.process img {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.diagnostic {
+  padding: 1%;
+  background-color: var(--color1);
+  height: 270px;
+}
+.assessment {
+  padding: 1%;
+  background-color: var(--color1);
+  height: 400px;
+}
+.speak {
+  padding: 1%;
+  background-color: var(--color1);
+  height: 530px;
+}
+.tailored {
+  padding: 1%;
+  background-color: var(--color1);
+  height: 660px;
+}
+.public {
+  padding: 1%;
+  background-color: var(--color1);
+  height: 790px;
+}
+.kaizen {
+  padding: 1%;
+  background-color: var(--color1);
+  height: 920px;
+}
+
+/*sofskills*/
+.softskills h1 {
+  text-align: center;
+  color: var(--black);
+}
+
+.softskills div {
+  display: -webkit-box;
+}
+
+.softskills h2 {
+  margin-left: 40px;
+  width: 45%;
+  color: #334889;
+}
+
+.softskills img {
+  margin-left: 1%;
+  width: 50%;
+  height: auto;
+}
+
+/*company*/
+.company {
+  margin-left: 5%;
+}
+
+.company h1 {
+  text-align: center;
+  color: var(--black);
+}
+
+.company img {
+  margin-bottom: 30px;
+  max-width: 180px;
+  max-height: 180px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.company div {
+}
+
+.Home .weare {
+  display: none;
+}
+
+@media only screen and (max-width: 1850px) {
+  .offer {
+    display: block;
+  }
+  .offer h1 {
+    writing-mode: horizontal-tb;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .softskills div {
+    display: block;
+  }
+  .softskills img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  .softskills h2 {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .process div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .process span {
+    width: 15%;
+  }
+}
+
+.small_process {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .process {
+    margin-top: 40px;
+  }
+  .process div {
+    display: block;
+  }
+  .process h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .process span {
+    border-radius: 0 100px 100px 0;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 0;
+    height: auto;
+    justify-content: unset;
+    padding: 10px 1vw;
+  }
+  .process img {
+    height: 10%;
+    width: auto;
+    margin-left: 0;
+    /*padding: 10px 0;*/
+    padding-left: 10px;
+  }
+  .process h2 {
+    margin-left: 20px;
+  }
+  .diagnostic {
+    background-color: var(--color1);
+    width: 56% !important;
+  }
+  .assessment {
+    background-color: var(--color1);
+    width: 62% !important;
+  }
+  .speak {
+    background-color: var(--color1);
+    width: 68% !important;
+  }
+  .tailored {
+    background-color: var(--color1);
+    width: 80% !important;
+  }
+  .public {
+    background-color: var(--color1);
+    width: 86% !important;
+  }
+  .kaizen {
+    background-color: var(--color1);
+    width: 92% !important;
+  }
+  /*soft skills*/
+  .softskills {
+    margin-top: 40px;
+  }
+  .softskills h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .softskills img {
+    margin-left: 2%;
+    width: 96%;
+  }
+  .softskills h2 {
+    text-align: left;
+    margin-left: 2%;
+    width: 96%;
+  }
+  /*company*/
+  .company {
+    margin-top: 40px;
+    margin-left: 1%;
+  }
+  .company h1 {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .Home .weare {
+    background-color: aliceblue;
+    display: block;
+    width: 90%;
+    border-radius: 0 32px 32px 0;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  }
+
+  .Home .weare h1 {
+    color: var(--black);
+  }
+  .Home .weare h3 {
+    color: var(--color1);
+  }
+  .Home .weare a {
+    font-size: 20px;
+  }
+  .purpose {
+    width: 66%;
+  }
+
+  .coaching {
+    width: 74%;
+  }
+
+  .business {
+    width: 82%;
+  }
+
+  .international {
+    width: 90%;
+  }
+  .softskills h2 {
+  }
+}
+
+.Home .weare h2 {
+  color: var(--color2);
+}
+
+@media only screen and (max-width: 685px) {
+  .process h2 {
+    font-size: 12px !important;
+  }
+
+  h2 {
+    font-size: 12px !important;
+  }
+
+  .Home .weare {
+  }
+  .offer span {
+    padding: 10px 1%;
+  }
+  .offer h2 {
+    font-size: 12px !important;
+  }
+
+  .Home .weare h1 {
+    color: var(--black);
+  }
+
+  .Home .weare a {
+    font-size: 20px;
+  }
+  .purpose {
+    width: 70%;
+  }
+
+  .coaching {
+    width: 80%;
+  }
+
+  .business {
+    width: 90%;
+  }
+
+  .international {
+    width: 98%;
+  }
+}
+
+#myVideo {
+  object-fit: cover;
+  width: 99%;
+  z-index: -1;
+}
+
+.Home {
+  width: 100vw;
+}

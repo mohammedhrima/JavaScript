@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.bg {
+    background-image: url("./assets/background-pattern-desktop.svg");
+    height: 50vh; /* Set the height to 50% of the window height */
+    width: 100vw;
+    position: absolute; /* Position the background image absolutely */
+    top: 0; /* Align it to the top of the App container */
+}
+
+.App {
+    background-color: hsl(275, 100%, 97%);
+    color: hsl(292, 42%, 14%);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex: 1;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Make the App container a positioning context */
+}
+
+.container {
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 25px;
+    border-radius: 20px;
+    width: 80vw;
+    max-width: 1200px;
+    z-index: 1; /* Ensure the container is on top of the background image */
+}
+
+.faq {
+    display: flex;
+    padding: 25px 0px;
+    gap: 18px;
+}
+
+.faq h1 {
+    font-size: 40px;
+}
+
+.cards {
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    padding: 18px 0px;
+}
+
+.card h5 {
+    cursor: pointer;
+    margin-bottom: 0; /* Adjusted margin to align perfectly with the image */
+    font-size: 15px;
+}
+
+.card h5:hover {
+    color: hsl(294, 45%, 46%);
+}
+
+.card span {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card img {
+    height: 25px;
+    cursor: pointer;
+}
+
+.card p {
+    width: 95%;
+}

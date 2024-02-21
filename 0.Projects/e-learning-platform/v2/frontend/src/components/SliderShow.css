@@ -1,0 +1,39 @@
+img {
+  vertical-align: middle;
+  width: 100vw;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 10vw;
+  width: auto;
+  padding: 5vw;
+  margin-top: -22px;
+  color: var(--Secondary);
+  font-weight: bold;
+  font-size: 3vw;
+
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+  border-radius: 0 1vw 1vw 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 1vw 0 0 1vw;
+}
+.prev:hover,
+.next:hover {
+  background: var(--Gradian);
+  color: var(--Background);
+  transition: 0.1s ease;
+}

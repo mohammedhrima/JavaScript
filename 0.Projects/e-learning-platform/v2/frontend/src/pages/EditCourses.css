@@ -1,0 +1,126 @@
+.edithandlecourses_container {
+  margin-left: 2vw;
+}
+
+.edithandlecourses_container textarea {
+  display: block;
+  height: 10vw;
+  padding: 2px 2px 2px 2px;
+  border-radius: 16px;
+}
+.edithandlecourses_container button {
+  display: block;
+}
+
+.edithandlecourses_container input {
+  background-color: var(--White);
+  border-radius: 1vw;
+  height: 4vw;
+  width: 40vw;
+  padding: 0.8vw 0.8vw;
+}
+
+.edithandlecourses_container h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.edithandlecourses_container button {
+  margin-bottom: 24px;
+  padding: 0px 8px 8px 8px;
+  border-radius: 24px;
+  width: 16vw;
+}
+
+.editcourses_container {
+}
+
+.editcourses_container textarea {
+  display: block;
+  height: 10vw;
+  padding: 2px 2px 2px 2px;
+  border-radius: 16px;
+}
+.editcourses_container button {
+  display: block;
+}
+
+.editcourses_container input {
+  background-color: var(--White);
+  border-radius: 1vw;
+  height: 4vw;
+  width: 40vw;
+  padding: 0.8vw 0.8vw;
+}
+
+.editcourses_container h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.editcourses_container button {
+  margin-bottom: 24px;
+  padding: 0px 8px 8px 8px;
+  border-radius: 24px;
+  width: 16vw;
+}
+
+.editcourses_container video {
+  width: 20vw;
+}
+
+.edituploadvideo_container {
+  margin-bottom: 48px;
+}
+
+.edituploadvideo_container span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--Red);
+  margin-top: 10px;
+  margin-left: calc(30vw - 30px);
+  border-radius: 10px;
+}
+
+.edituploadvideo_container span:hover {
+  background-color: var(--White);
+}
+
+.edituploadvideo {
+  width: 30vw;
+  background-color: #b0bbc1;
+  border-radius: 24px;
+}
+
+.edituploadvideo h1 {
+  padding: 5vw 4vw;
+}
+.edituploadvideo h2 {
+  margin-top: 4px !important;
+}
+
+.edituploadvideo_container {
+  margin-top: 40px;
+  display: flex;
+}
+
+.editcourse_data {
+  margin-left: 1vw;
+}
+
+.editcourse_data h2 {
+  margin-top: 4px;
+}
+
+.editcourse_data input {
+  width: 40vw;
+}
+
+/*======= Medium devices =========*/
+@media screen and (max-width: 1024px) {
+}
+
+/*======= small devices =========*/
+@media screen and (max-width: 600px) {
+}

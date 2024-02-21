@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+/*Base Styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.parent h1:nth-child(1) {
+    background-color: red;
+}
+
+.parent h1:nth-child(2) {
+    background-color: blue;
+}
+
+.parent h1:nth-child(3) {
+    background-color: green;
+}
+.parent {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    justify-content:  space-evenly;
+}

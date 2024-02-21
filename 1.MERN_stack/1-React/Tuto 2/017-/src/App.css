@@ -1,0 +1,19 @@
+* {
+  margin: 0 0 0 0;
+}
+
+body {
+  background-color: #23252C;
+  color: white;
+  font-size: 25px;
+}
+
+.App {
+  background-color: #12151f;
+  height: 80px;
+}
+
+.Header {
+  padding-top: 18px;
+  margin-left: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Molestias consectetur tempore voluptatem porro dolor repudiandae <br />
+            odio perspiciatis libero, ullam iusto voluptates rerum mollitia dolore<br />
+            consequatur. Similique saepe accusantium atque, numquam voluptatem ab libero<br />
+            deserunt recusandae consequuntur tempore explicabo distinctio iusto modi officiis<br />
+            unde quasi exercitationem laudantium perferendis minus aliquid optio.
+        </div>
+    </body>
+    <style>
+        .container {
+            animation: translate-down 1s infinite alternate linear;
+        }
+        @keyframes margin-down {
+            from {
+                margin-top: 0;
+            }
+            to {
+                margin-top: 300px;
+            }
+        }
+        @keyframes translate-down {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(300px);
+            }
+        }
+    </style>
+</html>

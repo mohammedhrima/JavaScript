@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  client:
+    build: "./front"
+    container_name: client_c
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./front:/app
+      - ./app/node_modules # in case node_module get deleted
+    stdin_open: true
+  server:                    # random name
+    build: ./api          # path for for project
+    container_name: api_c
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./api:/app
+      - ./app/node_modules # in case node_module get deleted

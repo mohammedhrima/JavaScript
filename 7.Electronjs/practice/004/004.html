@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>004</title>
+    </head>
+    <body>
+        <h1>APP 004</h1>
+        <form>
+            <div>
+                <label>Select a video</label>
+                <input type="file" accept="video/*" />
+            </div>
+            <button type="submit">Get Info</button>
+        </form>
+        <h1 id="result"></h1>
+        <script>
+            const electron = require("electron"); //import electron
+            const { ipcRenderer } =
+                electron; /*import ipcRendrere from electron*/
+            document
+                .querySelector("form")
+                .addEventListener("submit", (event) => {
+                    event.preventDefault();
+                    /*
+        when you select a file,
+        there information will be added to a list
+        we did files[0] to select last file selected
+        */
+                    const { path } = document.querySelector("input").files[0];
+                    //console.log(path);
+                    /*ipcRenderer.send to send from mainWindow to Electron APP*/
+                    ipcRenderer.send("Video submited", path);
+                });
+            ipcRenderer.on("Got video lenght", (event, duration) => {
+                /*to select element h1 with id "result"*/
+                document.querySelector(
+                    "#result"
+                ).innerHTML = `Video is ${duration} seconds`;
+            });
+        </script>
+    </body>
+</html>

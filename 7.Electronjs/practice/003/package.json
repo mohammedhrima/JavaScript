@@ -1,0 +1,16 @@
+{
+  "name": "003",
+  "version": "1.0.0",
+  "description": "",
+  "main": "003.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^17.0.1",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}

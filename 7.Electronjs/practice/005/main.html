@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Todos</title>
+    </head>
+    <body>
+        <h1>My Todos</h1>
+        <ul></ul>
+        <script>
+            const electron = require("electron");
+            const { ipcRenderer } = electron;
+            ipcRenderer.on("request", (event, todo) => {
+                /*to creat li elements*/
+                const li = document.createElement("li");
+                /*append todo to text constant*/
+                const text = document.createTextNode(todo);
+                li.appendChild(text);
+                /*show li in interface*/
+                document.querySelector("ul").appendChild(li);
+            });
+            ipcRenderer.on("clear", () => {
+                /*Clear ul and set it to blank*/
+                document.querySelector("ul").innerHTML = "";
+            });
+        </script>
+    </body>
+</html>

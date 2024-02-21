@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <form>
+      <div>
+        <label>Enter your todo:</label>
+        <input type="text" autofocus /><!--so you can tape manually location-->
+      </div>
+      <button type="submit">Add</button>
+    </form>
+    <script>
+      const electron = require("electron");
+      const { ipcRenderer } = electron;
+      document.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        //debugger;
+        var value = document.querySelector("input").value;
+        console.log("value in add.html: ", value);
+        //debugger;
+        ipcRenderer.send("value", value);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>002</title>
+    </head>
+    <body>
+        <h1>APP 002</h1>
+        <form>
+            <div>
+                <label>Select something</label>
+                <input type="file" accept="video/*" />
+                const electron = require("electron"); //import electron const {
+                ipcRenderer } = electron; //import ipRendrer /* select item form
+                in html file "submit" : wait till they are clicked */ let Start
+                = function (event) { event.preventDefault(); /* When you select
+                a file, there information will be added to a list we did
+                files[0] to select last file seleted */
+                console.log("--------------Start-----------------"); let { path
+                } = document.querySelector("input").files[0]; console.log("path
+                is ", path); //console.log(path); /*send message "open file" to
+                app.js (contains the link to excel file)*/
+                ipcRenderer.send("Open_file", path); /*Disable and Remove
+                elements with Id="Remove"*/
+                document.querySelector("form").removeEventListener("submit",
+                Start, false); document.getElementById("Remove").disabled =
+                true; for (let x = 0; x < 3; x++) { var elem =
+                document.getElementById("Remove");
+                elem.parentNode.removeChild(elem); } };
+                document.querySelector("form").addEventListener("submit", Start,
+                true);
+            </div>
+        </form>
+    </body>
+</html>

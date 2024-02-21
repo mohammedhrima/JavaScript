@@ -1,0 +1,71 @@
+/* from 992px and above */
+@media only screen and (min-width: 992px) {
+    .nav-icon {
+        display: none;
+    }
+    .navbar {
+        top: 20px;
+        position: fixed;
+        width: calc(100% - 100px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 100px;
+    }
+    .navs {
+        /* background-color: green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        backdrop-filter: blur(10px);
+    }
+
+    .navs nav {
+        padding: 30px 30px;
+        border: 2px solid transparent;
+    }
+    .navs nav:hover {
+        border-bottom: 2px solid var(--white);
+    }
+}
+
+/* less than 992px */
+@media only screen and (max-width: 992px) {
+    .logo {
+        padding: 18px;
+    }
+    .nav-icon {
+        padding: 20px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+    }
+    .navbar {
+        /* background-color: red; */
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* margin: 0px 2vw; */
+    }
+    .navs {
+        /* background-color: greenyellow; */
+        padding-top: 4vh;
+        height: 96vh;
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+    }
+
+    .navs nav {
+        padding: 30px 70px;
+        border: 2px solid transparent;
+        transition: border-bottom 0.3s ease;
+    }
+    .navs nav:hover {
+        border-bottom: 2px solid var(--white);
+    }
+}

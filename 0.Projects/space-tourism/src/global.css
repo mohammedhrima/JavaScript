@@ -1,0 +1,186 @@
+/* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap");
+:root {
+    --dark: rgb(11, 13, 23);
+    --blue: rgb(208, 214, 249);
+    --white: rgb(255, 255, 255);
+    --gray: rgb(95, 93, 93);
+}
+* {
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    margin: 0;
+    color: var(--white);
+    transition: border-bottom 0.5s ease;
+}
+body {
+    height: 100vh;
+}
+#root {
+    width: 100%;
+    /*be carefull be fore changing it !!!*/
+    height: 100%;
+}
+#App {
+    width: 100%;
+    height: 100%;
+    min-width: 360px;
+    min-height: 980px;
+}
+img {
+    cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+    .hidden {
+        display: none !important;
+    }
+}
+nav {
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+h4 {
+    letter-spacing: 2px;
+    color: var(--gray);
+}
+.bold {
+    font-weight: bold;
+    color: var(--gray);
+}
+p {
+    color: var(--blue);
+    line-height: 2;
+}
+/* 0 - 610px */
+@media only screen and (max-width: 610px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 56px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 26px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 28px;
+    }
+    .h7 {
+        font-size: 14px;
+    }
+    nav {
+        font-size: 16px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+/* 610 - 768px */
+@media only screen and (min-width: 610px) and (max-width: 768px) {
+    h1 {
+        font-size: 150px;
+    }
+    h2 {
+        font-size: 80px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 28px;
+    }
+    h6 {
+        font-size: 28px;
+    }
+    .h7 {
+        font-size: 14px;
+    }
+    nav {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+/* 768 - 1440px */
+@media only screen and (min-width: 769px) {
+    h1 {
+        font-size: 150px;
+    }
+    h2 {
+        font-size: 100px;
+    }
+    h3 {
+        font-size: 56px;
+    }
+    h4 {
+        font-size: 36px;
+    }
+    h5 {
+        font-size: 28px;
+    }
+    h6 {
+        font-size: 28px;
+    }
+    .h7 {
+        font-size: 14px;
+    }
+    nav {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+/* above 1260px */
+/* @media only screen and (min-width: 1260px) {
+    p {
+        font-size: 24px;
+    }
+} */
+
+/* above 1440px */
+@media only screen and (min-width: 2000px) {
+    /* h1 {
+        font-size: 250px;
+    }
+    h2 {
+        font-size: 200px;
+    }
+    h3 {
+        font-size: 110px;
+    }
+    h4 {
+        font-size: 60px;
+    }
+    h5 {
+        font-size: 56px;
+    }
+    h6 {
+        font-size: 56px;
+    }
+    .h7 {
+        font-size: 28px;
+    }
+    nav {
+        font-size: 36px;
+    }
+    p {
+        font-size: 32px;
+    } */
+}

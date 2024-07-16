@@ -1,0 +1,24 @@
+.active {
+    background-color: green;
+    border: 3px solid yellow;
+}
+.no-active {
+    background-color: red;
+}
+
+.active-border {
+    border: 5px solid yellow;
+}
+
+.no-active-border {
+    border: 5px solid yellow;
+}
+
+.apple
+{
+    background-color:  red;
+    border: 1px solid green;
+}
+
+input {
+}

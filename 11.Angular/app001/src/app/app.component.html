@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<h1>
+  {{test_var}}
+</h1>
+<app-header></app-header>
+<!-- <img [src]="imgUrl" /> -->
+
+<button [disabled]="isDisabled">
+  clique me
+</button>
+
+<!-- class binding -->
+<button [class.active]="isActive" [class.no-active]="!isActive" [class.active-border]="isActive"
+  [class.no-active-border]="!isActive">
+  clique me 2
+</button>
+
+<button [class.apple]="fruitName == 'Apple'">Fruit Ninja</button>
+<button [style.backgroundColor]="isActive ? 'red' : 'green' "
+  [style.border]="isActive ? '3px solid yellow' : '' ">Click</button>
+
+<button [class.active]="isActive">Class binding</button>
+
+<button (click)="buttonClick()">click me</button>
+<div (mouseover)="hoverFunc()">hover over it</div>
+<input type="text" (keyup)="keyEvent($event)" /><br />
+<!-- listen only on enter key -->
+<input type="text" (keyup.enter)="keyEnter()"><br />
+<!-- template variable -->
+<input type="text" (keyup)="handle0(user)" #user><br />
+<input type="text" [value]="userName" #username (keyup.enter)="updateUserName(username)"><br />
+<input type="text" [(ngModel)]="userName"><br />
+<h3>{{userName}}</h3>
+
+<input type="text" [value]="textValue" (keyup.enter)="func()"> <br>
+<input type="text" [(ngModel)]="textValue" (keyup.enter)="func()">
